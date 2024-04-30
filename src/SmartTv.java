@@ -7,11 +7,8 @@ public class SmartTv {
     this.isOn = !this.isOn;
 
     String state = this.isOn ? "Ligada" : "Desligada";
-    System.out.println("A TV está " + state);
 
-    if (this.isOn) {
-      System.out.println("Canal " + this.channel);
-    }
+    this.showScreen(5, 20, state);
   }
 
   public void increaseVolume() {
@@ -49,5 +46,32 @@ public class SmartTv {
       this.channel++;
       System.out.println("Canal " + this.channel);
     }
+  }
+
+  private void showScreen(int vPos, int hPos, String data) {
+    int width = 50;
+    int height = 10;
+    String border = "||";
+    int bordersLength = border.length() * 2;
+
+    System.out.println("=".repeat(width));
+
+    for (int row = 0; row < height; row++) {
+      if (row == vPos) {
+        String conteudo = " ".repeat(hPos) + data;
+        String bordaDir = " ".repeat(width - bordersLength - data.length() - hPos) + border;
+
+        System.out.println(border + conteudo + bordaDir);
+      }
+
+      System.out.println(border + " ".repeat(width - bordersLength) + border);
+    }
+
+    String button = "(O) ";
+    int emptyPixel = width - bordersLength - button.length();
+
+    System.out.println("=".repeat(width));
+    System.out.println(border + " ".repeat(emptyPixel) + button + border);
+    System.out.println("=".repeat(width));
   }
 }
