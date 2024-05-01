@@ -19,8 +19,10 @@ Implementei uma forma de "renderizar" no terminal o conteúdo da propriedade que
 
 ### Exemplos
 
-- Quadro da TV:
+#### Quadro da TV:
+
   <img src="./assets/repo/tv-frame.png" style="display:block;" />
 
-- TV ligando:
+#### TV ligando:
+
   <img src="./assets/repo/booting.png" style="display:block;" />
