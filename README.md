@@ -17,5 +17,10 @@ O exercício consistia na criação de uma classe `SmartTv` com as seguintes pro
 
 Implementei uma forma de "renderizar" no terminal o conteúdo da propriedade que foi alterada.
 
-<img src="./assets/repo/tv-frame.png" />
-<img src="./assets/repo/booting.png" />
+### Exemplos
+
+- Quadro da TV:
+  <img src="./assets/repo/tv-frame.png" style="display:block;" />
+
+- TV ligando:
+  <img src="./assets/repo/booting.png" style="display:block;" />
